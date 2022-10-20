@@ -1,0 +1,78 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "My Login application",
+    "children" : [ {
+      "name" : "should login with valid credentials",
+      "uid" : "9222996b4fc464f5",
+      "parentUid" : "ff9b43c34a817b44fa9b6edf61b00141",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666211320887,
+        "stop" : 1666211327316,
+        "duration" : 6429
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-106.0.5249.119" ]
+    } ],
+    "uid" : "ff9b43c34a817b44fa9b6edf61b00141"
+  }, {
+    "name" : "Test Storage",
+    "children" : [ {
+      "name" : "Successfully join the waitlist by sending form with valid values",
+      "uid" : "565906a0130e300a",
+      "parentUid" : "5309da72cd6b177af55d206299b107e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666219749701,
+        "stop" : 1666219772236,
+        "duration" : 22535
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-106.0.5249.119" ]
+    }, {
+      "name" : "successfully send 'Join the waitlist' form with valid values",
+      "uid" : "f3806369e7a77d38",
+      "parentUid" : "5309da72cd6b177af55d206299b107e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666249902332,
+        "stop" : 1666249921631,
+        "duration" : 19299
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-106.0.5249.119" ]
+    }, {
+      "name" : "cannot submit 'Join the waitlist form' with empty required fields",
+      "uid" : "ce33eccc03620976",
+      "parentUid" : "5309da72cd6b177af55d206299b107e7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1666249921633,
+        "stop" : 1666249921633,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "cannot submit 'Join the waitlist form' with empty required fields",
+      "uid" : "73105c1c99927f0a",
+      "parentUid" : "5309da72cd6b177af55d206299b107e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666251663327,
+        "stop" : 1666251691222,
+        "duration" : 27895
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-106.0.5249.119" ]
+    } ],
+    "uid" : "5309da72cd6b177af55d206299b107e7"
+  } ]
+}

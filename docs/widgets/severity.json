@@ -1,0 +1,51 @@
+[ {
+  "uid" : "73105c1c99927f0a",
+  "name" : "cannot submit 'Join the waitlist form' with empty required fields",
+  "time" : {
+    "start" : 1666251663327,
+    "stop" : 1666251691222,
+    "duration" : 27895
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ce33eccc03620976",
+  "name" : "cannot submit 'Join the waitlist form' with empty required fields",
+  "time" : {
+    "start" : 1666249921633,
+    "stop" : 1666249921633,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "f3806369e7a77d38",
+  "name" : "successfully send 'Join the waitlist' form with valid values",
+  "time" : {
+    "start" : 1666249902332,
+    "stop" : 1666249921631,
+    "duration" : 19299
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "565906a0130e300a",
+  "name" : "Successfully join the waitlist by sending form with valid values",
+  "time" : {
+    "start" : 1666219749701,
+    "stop" : 1666219772236,
+    "duration" : 22535
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9222996b4fc464f5",
+  "name" : "should login with valid credentials",
+  "time" : {
+    "start" : 1666211320887,
+    "stop" : 1666211327316,
+    "duration" : 6429
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

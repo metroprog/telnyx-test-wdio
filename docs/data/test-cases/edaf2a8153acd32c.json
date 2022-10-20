@@ -1,0 +1,161 @@
+{
+  "uid" : "edaf2a8153acd32c",
+  "name" : "Successfully join the waitlist by sending form with valid values",
+  "fullName" : "Test Storage.Successfully join the waitlist by sending form with valid values",
+  "historyId" : "201bb283b2478fe1ec69aa4cf4575529",
+  "time" : {
+    "start" : 1666214712849,
+    "stop" : 1666214716250,
+    "duration" : 3401
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "elem[prop] is not a function",
+  "statusTrace" : "TypeError: elem[prop] is not a function\n                    at G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:253:38\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at async G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\expect-webdriverio\\lib\\matchers\\element\\toHaveText.js:17:18\n                    at async Browser.wrapCommandFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)\n                    at async StoragePage.goToJoinForm (G:\\LuxeQuality\\telnyx-test-wdio\\test\\pages\\storage.page.js:11:9)\n                    at async Context.<anonymous> (G:\\LuxeQuality\\telnyx-test-wdio\\test\\specs\\storage.js:7:9)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "elem[prop] is not a function",
+    "statusTrace" : "TypeError: elem[prop] is not a function\n                    at G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:253:38\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at async G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\expect-webdriverio\\lib\\matchers\\element\\toHaveText.js:17:18\n                    at async Browser.wrapCommandFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)\n                    at async StoragePage.goToJoinForm (G:\\LuxeQuality\\telnyx-test-wdio\\test\\pages\\storage.page.js:11:9)\n                    at async Context.<anonymous> (G:\\LuxeQuality\\telnyx-test-wdio\\test\\specs\\storage.js:7:9)",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1666214712870,
+        "stop" : 1666214716250,
+        "duration" : 3380
+      },
+      "status" : "broken",
+      "statusMessage" : "TypeError: elem[prop] is not a function\n                    at G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:253:38\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at async G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\expect-webdriverio\\lib\\matchers\\element\\toHaveText.js:17:18\n                    at async Browser.wrapCommandFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)\n                    at async StoragePage.goToJoinForm (G:\\LuxeQuality\\telnyx-test-wdio\\test\\pages\\storage.page.js:11:9)\n                    at async Context.<anonymous> (G:\\LuxeQuality\\telnyx-test-wdio\\test\\specs\\storage.js:7:9)",
+      "steps" : [ {
+        "name" : "POST /session/:sessionId/url",
+        "time" : {
+          "start" : 1666214712891,
+          "stop" : 1666214713124,
+          "duration" : 233
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "bf13a77c28a7223e",
+          "name" : "Request",
+          "source" : "bf13a77c28a7223e.json",
+          "type" : "application/json",
+          "size" : 50
+        }, {
+          "uid" : "32acaa01400b0b78",
+          "name" : "Response",
+          "source" : "32acaa01400b0b78.json",
+          "type" : "application/json",
+          "size" : 1034
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "GET /session/:sessionId/screenshot",
+        "time" : {
+          "start" : 1666214713157,
+          "stop" : 1666214716247,
+          "duration" : 3090
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "POST /session/:sessionId/element",
+          "time" : {
+            "start" : 1666214713869,
+            "stop" : 1666214716091,
+            "duration" : 2222
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "e9879e2edbd4c9de",
+            "name" : "Request",
+            "source" : "e9879e2edbd4c9de.json",
+            "type" : "application/json",
+            "size" : 75
+          } ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ {
+          "uid" : "fae442457eb3fd58",
+          "name" : "Screenshot",
+          "source" : "fae442457eb3fd58.png",
+          "type" : "image/png",
+          "size" : 66845
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      } ],
+      "attachments" : [ {
+        "uid" : "e80855f9dff827a8",
+        "name" : "Request",
+        "source" : "e80855f9dff827a8.json",
+        "type" : "application/json",
+        "size" : 61
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 5
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 5
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Test Storage"
+  }, {
+    "name" : "testClass",
+    "value" : "Test Storage"
+  }, {
+    "name" : "testMethod",
+    "value" : "Successfully join the waitlist by sending form with valid values"
+  }, {
+    "name" : "package",
+    "value" : "Test Storage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-106.0.5249.119"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "edaf2a8153acd32c.json",
+  "parameterValues" : [ "chrome-106.0.5249.119" ]
+}

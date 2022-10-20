@@ -1,0 +1,299 @@
+{
+  "uid" : "92f84c397a6c4ae9",
+  "name" : "Successfully join the waitlist by sending form with valid values",
+  "fullName" : "Test Storage.Successfully join the waitlist by sending form with valid values",
+  "historyId" : "201bb283b2478fe1ec69aa4cf4575529",
+  "time" : {
+    "start" : 1666217573807,
+    "stop" : 1666217583783,
+    "duration" : 9976
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element click intercepted: Element <a class=\"sc-5d3a275a-1 sc-5d3a275a-3 sc-5d3a275a-4 sc-5d3a275a-7 cSsJix UYAGn eUnEoi hBNXWZ mchNoDecorate\" href=\"#form\">...</a> is not clickable at point (100, 552). Other element would receive the click: <div class=\"sc-df34c536-3 dkdqrP\">...</div>\n                  (Session info: chrome=106.0.5249.119)",
+  "statusTrace" : "element click intercepted: element click intercepted: Element <a class=\"sc-5d3a275a-1 sc-5d3a275a-3 sc-5d3a275a-4 sc-5d3a275a-7 cSsJix UYAGn eUnEoi hBNXWZ mchNoDecorate\" href=\"#form\">...</a> is not clickable at point (100, 552). Other element would receive the click: <div class=\"sc-df34c536-3 dkdqrP\">...</div>\n                  (Session info: chrome=106.0.5249.119)\n                    at getErrorFromResponseBody (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\webdriver\\build\\utils.js:198:12)\n                    at NodeJSRequest._request (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\webdriver\\build\\request\\index.js:166:60)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at async Element.wrapCommandFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)\n                    at async Element.wrapCommandFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)\n                    at async Element.elementErrorHandlerCallbackFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\webdriverio\\build\\middlewares.js:24:32)\n                    at async Element.wrapCommandFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)\n                    at async Element.wrapCommandFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)\n                    at async Element.elementErrorHandlerCallbackFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\webdriverio\\build\\middlewares.js:24:32)\n                    at async Element.wrapCommandFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element click intercepted: Element <a class=\"sc-5d3a275a-1 sc-5d3a275a-3 sc-5d3a275a-4 sc-5d3a275a-7 cSsJix UYAGn eUnEoi hBNXWZ mchNoDecorate\" href=\"#form\">...</a> is not clickable at point (100, 552). Other element would receive the click: <div class=\"sc-df34c536-3 dkdqrP\">...</div>\n                  (Session info: chrome=106.0.5249.119)",
+    "statusTrace" : "element click intercepted: element click intercepted: Element <a class=\"sc-5d3a275a-1 sc-5d3a275a-3 sc-5d3a275a-4 sc-5d3a275a-7 cSsJix UYAGn eUnEoi hBNXWZ mchNoDecorate\" href=\"#form\">...</a> is not clickable at point (100, 552). Other element would receive the click: <div class=\"sc-df34c536-3 dkdqrP\">...</div>\n                  (Session info: chrome=106.0.5249.119)\n                    at getErrorFromResponseBody (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\webdriver\\build\\utils.js:198:12)\n                    at NodeJSRequest._request (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\webdriver\\build\\request\\index.js:166:60)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at async Element.wrapCommandFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)\n                    at async Element.wrapCommandFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)\n                    at async Element.elementErrorHandlerCallbackFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\webdriverio\\build\\middlewares.js:24:32)\n                    at async Element.wrapCommandFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)\n                    at async Element.wrapCommandFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)\n                    at async Element.elementErrorHandlerCallbackFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\webdriverio\\build\\middlewares.js:24:32)\n                    at async Element.wrapCommandFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)",
+    "steps" : [ {
+      "name" : "GET /session/:sessionId/cookie",
+      "time" : {
+        "start" : 1666217573815,
+        "stop" : 1666217583783,
+        "duration" : 9968
+      },
+      "status" : "broken",
+      "statusMessage" : "element click intercepted: element click intercepted: Element <a class=\"sc-5d3a275a-1 sc-5d3a275a-3 sc-5d3a275a-4 sc-5d3a275a-7 cSsJix UYAGn eUnEoi hBNXWZ mchNoDecorate\" href=\"#form\">...</a> is not clickable at point (100, 552). Other element would receive the click: <div class=\"sc-df34c536-3 dkdqrP\">...</div>\n                  (Session info: chrome=106.0.5249.119)\n                    at getErrorFromResponseBody (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\webdriver\\build\\utils.js:198:12)\n                    at NodeJSRequest._request (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\webdriver\\build\\request\\index.js:166:60)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at async Element.wrapCommandFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)\n                    at async Element.wrapCommandFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)\n                    at async Element.elementErrorHandlerCallbackFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\webdriverio\\build\\middlewares.js:24:32)\n                    at async Element.wrapCommandFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)\n                    at async Element.wrapCommandFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)\n                    at async Element.elementErrorHandlerCallbackFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\webdriverio\\build\\middlewares.js:24:32)\n                    at async Element.wrapCommandFn (G:\\LuxeQuality\\telnyx-test-wdio\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)",
+      "steps" : [ {
+        "name" : "POST /session/:sessionId/element",
+        "time" : {
+          "start" : 1666217573877,
+          "stop" : 1666217576879,
+          "duration" : 3002
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "POST /session/:sessionId/url",
+          "time" : {
+            "start" : 1666217573970,
+            "stop" : 1666217574164,
+            "duration" : 194
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "fdff19c296e40043",
+            "name" : "Request",
+            "source" : "fdff19c296e40043.json",
+            "type" : "application/json",
+            "size" : 50
+          }, {
+            "uid" : "833c6d8c5ea9ea05",
+            "name" : "Response",
+            "source" : "833c6d8c5ea9ea05.json",
+            "type" : "application/json",
+            "size" : 2
+          } ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 2
+        }, {
+          "name" : "POST /session/:sessionId/element",
+          "time" : {
+            "start" : 1666217574169,
+            "stop" : 1666217576831,
+            "duration" : 2662
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "803fc6d6c51b6e7f",
+            "name" : "Request",
+            "source" : "803fc6d6c51b6e7f.json",
+            "type" : "application/json",
+            "size" : 75
+          } ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ {
+          "uid" : "5cf51abc01396154",
+          "name" : "Request",
+          "source" : "5cf51abc01396154.json",
+          "type" : "application/json",
+          "size" : 71
+        }, {
+          "uid" : "ce4d0bee6a674b07",
+          "name" : "Response",
+          "source" : "ce4d0bee6a674b07.json",
+          "type" : "application/json",
+          "size" : 83
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 5
+      }, {
+        "name" : "POST /session/:sessionId/element/1396afef-fa33-4e2b-b7dd-b43cacf4ea44/click",
+        "time" : {
+          "start" : 1666217576918,
+          "stop" : 1666217577102,
+          "duration" : 184
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "9c1ece71098b5045",
+          "name" : "Response",
+          "source" : "9c1ece71098b5045.json",
+          "type" : "application/json",
+          "size" : 83
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "POST /session/:sessionId/execute/sync",
+        "time" : {
+          "start" : 1666217577134,
+          "stop" : 1666217578860,
+          "duration" : 1726
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "57dd3f93d85f9d6a",
+          "name" : "Request",
+          "source" : "57dd3f93d85f9d6a.json",
+          "type" : "application/json",
+          "size" : 8331
+        }, {
+          "uid" : "93b7dfbef70163cb",
+          "name" : "Response",
+          "source" : "93b7dfbef70163cb.json",
+          "type" : "application/json",
+          "size" : 4
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "POST /session/:sessionId/execute/sync",
+        "time" : {
+          "start" : 1666217578861,
+          "stop" : 1666217580601,
+          "duration" : 1740
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "5cb3a7a9f87efe9c",
+          "name" : "Request",
+          "source" : "5cb3a7a9f87efe9c.json",
+          "type" : "application/json",
+          "size" : 5649
+        }, {
+          "uid" : "f994889a5c9a1a4d",
+          "name" : "Response",
+          "source" : "f994889a5c9a1a4d.json",
+          "type" : "application/json",
+          "size" : 4
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "POST /session/:sessionId/element",
+        "time" : {
+          "start" : 1666217580604,
+          "stop" : 1666217582118,
+          "duration" : 1514
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "e4cb70ead19f6afb",
+          "name" : "Request",
+          "source" : "e4cb70ead19f6afb.json",
+          "type" : "application/json",
+          "size" : 75
+        }, {
+          "uid" : "768e4b6ac8d8410",
+          "name" : "Response",
+          "source" : "768e4b6ac8d8410.json",
+          "type" : "application/json",
+          "size" : 83
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2
+      }, {
+        "name" : "POST /session/:sessionId/element/dd9ffd23-8859-479e-8d36-b5579d8e9528/click",
+        "time" : {
+          "start" : 1666217582132,
+          "stop" : 1666217583780,
+          "duration" : 1648
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "GET /session/:sessionId/screenshot",
+          "time" : {
+            "start" : 1666217583383,
+            "stop" : 1666217583619,
+            "duration" : 236
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ {
+          "uid" : "a3b09b35f1e5eb30",
+          "name" : "Screenshot",
+          "source" : "a3b09b35f1e5eb30.png",
+          "type" : "image/png",
+          "size" : 74043
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 9,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 13
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 13
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Test Storage"
+  }, {
+    "name" : "testClass",
+    "value" : "Test Storage"
+  }, {
+    "name" : "testMethod",
+    "value" : "Successfully join the waitlist by sending form with valid values"
+  }, {
+    "name" : "package",
+    "value" : "Test Storage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-106.0.5249.119"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "92f84c397a6c4ae9.json",
+  "parameterValues" : [ "chrome-106.0.5249.119" ]
+}

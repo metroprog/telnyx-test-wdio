@@ -1,0 +1,48 @@
+{
+  "uid" : "ce33eccc03620976",
+  "name" : "cannot submit 'Join the waitlist form' with empty required fields",
+  "fullName" : "Test Storage.cannot submit 'Join the waitlist form' with empty required fields",
+  "historyId" : "699ac3020ed786e4621cf780fe2f3cc8",
+  "time" : {
+    "start" : 1666249921633,
+    "stop" : 1666249921633,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Test ignored",
+  "statusTrace" : "undefined",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Test Storage"
+  }, {
+    "name" : "testClass",
+    "value" : "Test Storage"
+  }, {
+    "name" : "testMethod",
+    "value" : "cannot submit 'Join the waitlist form' with empty required fields"
+  }, {
+    "name" : "package",
+    "value" : "Test Storage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ce33eccc03620976.json",
+  "parameterValues" : [ ]
+}

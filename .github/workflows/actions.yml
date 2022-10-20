@@ -1,34 +1,43 @@
-name: test
-on: 
+name: Wdio tests
+on:
     push:
         branches: [main]
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-        - name: Checkout
-          uses: actions/checkout@v2
-        - uses: actions/setup-node@v1
-          with:
-            node-version: 18
-        - name: Install
-          run: npm install
-        - name: Test
-          run: npm run test:chrome:headless
-        - name: Create Report
-          if: always()
-          run: npm run allure:generate
-        - name: Upload artifact allure-report
-          uses: actions/upload-artifact@v1
-          if: always()
-          with:
-              name: allure-report
-              path: allure-report
-        - name: Deploy report
-          uses: JamesIves/github-pages-deploy-action@v4
-          if: always()
-          with:
-              ACCESS_TOKEN: ${{'secrets.ACCESS_TOKEN'}}
-              BRANCH: gh-pages
-              FOLDER: allure-report 
-              target-folder: docs
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+            - uses: actions/setup-node@v1
+              with:
+                  node-version: "16"
+            - name: Install
+              run: npm install
+            - name: Run tests
+              run: npm run test:chrome:headless
+            - name: Copy History
+              if: always()
+              run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history
+            - name: Generate Report
+              if: always()
+              run: npm run allure:generate
+            - name: Upload results
+              uses: actions/upload-artifact@v1
+              if: always()
+              with:
+                  name: allure-results
+                  path: ./allure-results
+            - name: Publishing Allure artifact to Github Actions
+              uses: actions/upload-artifact@v2
+              if: always()
+              with:
+                name: allure-report
+                path: allure-report     
+            - name: Deploy report
+              uses: JamesIves/github-pages-deploy-action@v4
+              if: always()
+              with:
+                  ACCESS_TOKEN: ${{'secrets.ACCESS_TOKEN'}}
+                  BRANCH: gh-pages
+                  FOLDER: allure-report
+                  target-folder: docs

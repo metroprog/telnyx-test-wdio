@@ -1,0 +1,29 @@
+[
+  {
+    "domain": "telnyx.com",
+    "expiry": 1666217606,
+    "httpOnly": false,
+    "name": "lux_uid",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "166621580603465604"
+  },
+  {
+    "domain": "telnyx.com",
+    "httpOnly": false,
+    "name": "ajs_anonymous_id",
+    "path": "/",
+    "secure": false,
+    "value": "9859eb7d-4416-4845-873c-b4abd1386e84"
+  },
+  {
+    "domain": ".telnyx.com",
+    "expiry": 1697838205,
+    "httpOnly": false,
+    "name": "_vwo_uuid_v2",
+    "path": "/",
+    "secure": false,
+    "value": "D4175328EA9EC084B785CB46D1BABE0CF|487084ad8d26051aa805d7bcc8e051f9"
+  }
+]

@@ -14,10 +14,10 @@ jobs:
         - name: Install
           run: npm install
         - name: Test
-          run: npm run wdio
+          run: npm run test:chrome:headless
         - name: Create Report
           if: always()
-          run: npx allure generate allure-results --clean
+          run: npm run allure:generate
         - name: Upload artifact allure-report
           uses: actions/upload-artifact@v1
           if: always()

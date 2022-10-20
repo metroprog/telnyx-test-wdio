@@ -16,16 +16,16 @@ class StoragePage extends BasePage {
         return $("h1");
     }
 
-    async getAccordionContent(number) {
-        return await $$(accordionContents)[number - 1];
+    async getAccordionContents(number = 0) {
+        return number == 0 ? $$(accordionContents) : $$(accordionContents)[number - 1];
     }
 
-    async getAccordionsNumbers() {
-        let accordionsCount = await $$(accordionTitles).length;
-        let numbers = [...Array(accordionsCount + 1).keys()];
-        numbers.splice(0, 1);
-        return numbers;
-    }
+    // async getAccordionsNumbersArr() {
+    //     let accordionsCount = await $$(accordionTitles).length;
+    //     let numbers = [...Array(accordionsCount + 1).keys()];
+    //     numbers.splice(0, 1);
+    //     return numbers;
+    // }
 
     async goToJoinForm() {
         await $(joinTheWaitListButtons).click();

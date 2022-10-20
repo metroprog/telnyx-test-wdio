@@ -39,5 +39,5 @@ jobs:
               with:
                   ACCESS_TOKEN: ${{'secrets.ACCESS_TOKEN'}}
                   BRANCH: gh-pages
-                  FOLDER: ./allure-report
+                  FOLDER: allure-report
                   target-folder: docs

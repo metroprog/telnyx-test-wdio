@@ -37,7 +37,7 @@ jobs:
               uses: JamesIves/github-pages-deploy-action@v4
               if: always()
               with:
-                  token: ${{'secrets.token'}}
+                  ACCESS_TOKEN: ${{'secrets.ACCESS_TOKEN'}}
                   branch: gh-pages
                   folder: allure-report
                   target-folder: docs

@@ -1,0 +1,34 @@
+name: test
+on: 
+    push:
+        branches: [master]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Checkout
+          uses: actions/checkout@v2
+        - uses: actions/setup-node@v1
+          with:
+            node-version: 18
+        - name: Install
+          run: npm install
+        - name: Test
+          run: npm run wdio
+        - name: Create Report
+          if: always()
+          run: npx allure generate allure-results --clean
+        - name: Upload artifact allure-report
+          uses: actions/upload-artifact@v1
+          if: always()
+          with:
+              name: allure-report
+              path: ./allure-report
+        - name: Deploy report
+          uses: JamesIves/github-pages-deploy-action@v4
+          if: always()
+          with:
+              ACCESS_TOKEN: ${{'secrets.ACCESS_TOKEN'}}
+              BRANCH: gh-pages
+              FOLDER: allure-report 
+              target-folder: docs

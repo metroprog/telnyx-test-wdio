@@ -9,7 +9,7 @@ const accordionContents = "[data-faq-answer]";
 
 class StoragePage extends BasePage {
     open() {
-        super.open("products/storage");
+        super.open("/products/storage");
         super.closeCookies();
     }
 

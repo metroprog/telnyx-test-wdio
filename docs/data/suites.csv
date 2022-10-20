@@ -1,2 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Oct 20 11:20:54 UTC 2022","Thu Oct 20 11:21:01 UTC 2022","7164","","Test Storage","","Test Storage","only one accordion at a time can be opened and displayed its content","only one accordion at a time can be opened and displayed its content",""
+"passed","Thu Oct 20 12:30:42 UTC 2022","Thu Oct 20 12:30:52 UTC 2022","10253","","Test Storage","","Test Storage","successfully send 'Join the waitlist' form with valid values","successfully send 'Join the waitlist' form with valid values",""
+"passed","Thu Oct 20 12:30:52 UTC 2022","Thu Oct 20 12:30:59 UTC 2022","6698","","Test Storage","","Test Storage","cannot submit 'Join the waitlist form' with empty required fields","cannot submit 'Join the waitlist form' with empty required fields",""
+"passed","Thu Oct 20 12:30:59 UTC 2022","Thu Oct 20 12:31:02 UTC 2022","2607","","Test Storage","","Test Storage","only one accordion at a time can be opened and displayed its content","only one accordion at a time can be opened and displayed its content",""

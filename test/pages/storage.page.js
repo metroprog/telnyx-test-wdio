@@ -20,13 +20,6 @@ class StoragePage extends BasePage {
         return number == 0 ? $$(accordionContents) : $$(accordionContents)[number - 1];
     }
 
-    // async getAccordionsNumbersArr() {
-    //     let accordionsCount = await $$(accordionTitles).length;
-    //     let numbers = [...Array(accordionsCount + 1).keys()];
-    //     numbers.splice(0, 1);
-    //     return numbers;
-    // }
-
     async goToJoinForm() {
         await $(joinTheWaitListButtons).click();
         await expect(browser).toHaveUrlContaining("#form");

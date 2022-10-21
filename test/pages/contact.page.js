@@ -7,6 +7,7 @@ const socialLinks = '[data-e2e="Footer--navItem-social"] a';
 const talkToExpertLink = 'header [href*="contact-us"]';
 const mainHeader = "main h1";
 const reasonContactSelect = "#Reason_for_Contact__c";
+const requiredFields = "form .mktoRequiredField input";
 
 class ContactPage extends BasePage {
 	open() {
@@ -32,6 +33,10 @@ class ContactPage extends BasePage {
 
     get mainHeader() {
         return $(mainHeader);
+    }
+
+	get requiredFields() {
+        return $$(requiredFields);
     }
 
 	async getLinkText(linkElem) {

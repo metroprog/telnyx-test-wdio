@@ -14,8 +14,8 @@ const errorMessages = {
 };
 
 module.exports = class BasePage {
-    errorMessage(field) {
-        return $(errorMessages[field]);
+    async errorMessage(field) {
+        return await $(errorMessages[field]);
     }
 
     /**

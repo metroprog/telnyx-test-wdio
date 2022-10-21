@@ -17,7 +17,7 @@ class StoragePage extends BasePage {
     }
 
     async getAccordionContents(number = 0) {
-        return number == 0 ? $$(accordionContents) : $$(accordionContents)[number - 1];
+        return number == 0 ? await $$(accordionContents) : $$(accordionContents)[number - 1];
     }
 
     async goToJoinForm() {

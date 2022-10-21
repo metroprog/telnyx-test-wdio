@@ -1,4 +1,5 @@
 const contactPage = require("../pages/contact.page");
+const user = require("../pages/tools");
 const socialUrls = [
 	"https://www.linkedin.com/company/telnyx",
 	"https://twitter.com/telnyx",
@@ -16,7 +17,7 @@ describe("Test Contact", () => {
 		await expect(contactPage.telLink).toHaveAttrContaining("href", "tel");
     });
 
-	it.only("verify social links", async () => {
+	it("verify social links", async () => {
 		let socialLinksList = await contactPage.socialLinks;
 		await socialLinksList.map(async (e, i) => {
 			await expect(e).toHaveAttrContaining("href", socialUrls[i]);
@@ -27,8 +28,16 @@ describe("Test Contact", () => {
 		let intTelLinksList = await contactPage.intTelLinks;
 		await intTelLinksList.map(async (e) => {
 			await expect(e).toHaveAttrContaining("href", "tel");
-			await expect(await contactPage.getLinkText(e) == await contactPage.getLinkHref(e));
+			await expect(contactPage.getLinkText(e)).toEqual(contactPage.getLinkHref(e));
 		});
+    });
+
+	it.only("successfully send 'Talk to an expert' form with valid values", async () => {
+		await contactPage.clickTalkToExpertLink();
+		await expect(contactPage.mainHeader).toHaveText('Talk to an expert');
+		await contactPage.fillAndSubmitTalkExpertForm(user);
+		await expect(browser).toHaveUrlContaining("/thank-you");
+		await expect(contactPage.mainHeader).toHaveText('Thanks for Reaching Out!');
     });
 
 });

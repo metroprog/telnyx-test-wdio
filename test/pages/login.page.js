@@ -28,6 +28,14 @@ class LoginPage extends BasePage {
         return $$(`${loginForm} ${requiredFields}`);
     }
 
+	get resendSubmitButton() {
+		return $(`${resendEmailForm} ${submitButton}`);
+	}
+
+	get resendEmailInput() {
+		return $(`${resendEmailForm} ${emailInput}`);
+	}
+
     async getMessage(field) {
         return await $(messages[field]);
     }
@@ -55,6 +63,11 @@ class LoginPage extends BasePage {
         await $(`${resendEmailForm} ${emailInput}`).setValue(userCreds.email);
         await $(`${resendEmailForm} ${submitButton}`).click();
     }
+
+	async submitEmptyVerificationEmailForm() {
+		await $(resendEmailLink).click();
+		await $(`${resendEmailForm} ${submitButton}`).click();
+	}
 
     async fillAndSubmitPasswordResetForm(userCreds) {
         await $(passwordResetLink).click();

@@ -45,8 +45,8 @@ describe("Test Contact", () => {
         await expect(contactPage.mainHeader).toHaveText("Talk to an expert");
         await contactPage.submitForm();
         await expect(browser).toHaveUrlContaining("/contact-us");
-        await expect(contactPage.errorMessage("reasonContact")).toBeDisplayed();
-        await expect(contactPage.errorMessage("reasonContact")).toHaveText("This field is required.");
+        await expect(contactPage.errorMessage("Choose reason for contact")).toBeDisplayed();
+        await expect(contactPage.errorMessage("Choose reason for contact")).toHaveText("This field is required.");
         await expect(contactPage.requiredFields).toHaveElementClass("mktoInvalid");
     });
 });

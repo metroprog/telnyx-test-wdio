@@ -19,17 +19,17 @@ describe("Test Storage", () => {
         await storagePage.fillFirstNameInput(user.firstName);
         await storagePage.fillLastNameInput(user.lastName);
         await storagePage.submitForm();
-        await expect(storagePage.errorMessage("email")).toHaveTextContaining("Must be valid email.");
+        await expect(storagePage.errorMessage("Business email")).toHaveTextContaining("Must be valid email.");
         await browser.refresh();
         await storagePage.fillFirstNameInput(user.firstName);
         await storagePage.fillEmailInput(user.email);
         await storagePage.submitForm();
-        await expect(storagePage.errorMessage("lastName")).toHaveText("This field is required.");
+        await expect(storagePage.errorMessage("Last Name")).toHaveText("This field is required.");
         await browser.refresh();
         await storagePage.fillLastNameInput(user.lastName);
         await storagePage.fillEmailInput(user.email);
         await storagePage.submitForm();
-        await expect(storagePage.errorMessage("firstName")).toHaveText("This field is required.");
+        await expect(storagePage.errorMessage("First Name")).toHaveText("This field is required.");
     });
 
     it("only one accordion at a time can be opened and displayed its content", async () => {

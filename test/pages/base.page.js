@@ -5,12 +5,12 @@ const emailInput = "#Email";
 const websiteInput = "#Website";
 const submitButton = '[type="submit"]';
 const errorMessages = {
-    firstName: "#ValidMsgFirstName",
-    lastName: "#ValidMsgLastName",
-    email: "#ValidMsgEmail",
-    website: "#ValidMsgWebsite",
-    reasonContact: "#ValidMsgReason_for_Contact__c",
-    primaryInterest: "#ValidMsgUse_Case_Form__c",
+    "First Name": "#ValidMsgFirstName",
+    "Last Name": "#ValidMsgLastName",
+    "Business email": "#ValidMsgEmail",
+    "Company website": "#ValidMsgWebsite",
+    "Choose reason for contact": "#ValidMsgReason_for_Contact__c",
+    "Primary Interest": "#ValidMsgUse_Case_Form__c",
 };
 
 module.exports = class BasePage {
@@ -22,9 +22,9 @@ module.exports = class BasePage {
      * Opens a sub page of the page
      * @param path path of the sub page (e.g. /path/to/page.html)
      */
-    open(path) {
-        browser.setWindowSize(1920, 1080);
-        return browser.url(`${path}`);
+    async open(path) {
+        await browser.setWindowSize(1920, 1080);
+        return await browser.url(path);
     }
 
     async closeCookies() {

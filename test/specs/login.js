@@ -15,6 +15,17 @@ describe("Test Login", () => {
         await expect(browser).toHaveUrlContaining("/sign-in");
     });
 
+	it("cannot login with empty required fields", async () => {
+		await loginPage.submitEmptyLoginForm();
+		await expect(browser).toHaveUrlContaining("/sign-in");
+		await expect(loginPage.getMessage("errorRequired")).toBeDisplayed();
+        await expect(loginPage.getMessage("errorRequired")).toHaveTextContaining("Required");
+		let requiredFieldsList = await loginPage.loginRequiredFields;
+        await requiredFieldsList.map(async (e) => {
+            await expect(e).toHaveElementProperty("border-color", "rgb(255, 102, 102)");
+        });
+	});
+
     it("cannot send Single Sign-On form with unregistered credentials", async () => {
         await loginPage.fillAndSubmitSSOForm(user);
         await expect(loginPage.getMessage("error")).toBeDisplayed();
@@ -39,4 +50,5 @@ describe("Test Login", () => {
             "We have accepted your password reset request. If you have a Telnyx account and are unable to reset your password successfully, please contact support for assistance."
         );
     });
+
 });

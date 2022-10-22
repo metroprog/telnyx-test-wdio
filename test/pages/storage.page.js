@@ -7,9 +7,9 @@ const accordionTitles = "[data-faq-question]";
 const accordionContents = "[data-faq-answer]";
 
 class StoragePage extends BasePage {
-    open() {
-        super.open("/products/storage");
-        super.closeCookies();
+    async open() {
+        await super.open("/products/storage");
+        await super.closeCookies();
     }
 
     get successPageHeader() {

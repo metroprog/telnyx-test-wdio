@@ -43,7 +43,7 @@ describe("Test Login", () => {
         );
     });
 
-	it.only("cannot send 'Resend Verification Email' form with empty field", async () => {
+	it("cannot send 'Resend Verification Email' form with empty field", async () => {
 		await loginPage.submitEmptyVerificationEmailForm();
 		await expect(loginPage.resendSubmitButton).toBeDisabled();
 		await loginPage.resendEmailInput.click();
@@ -61,4 +61,15 @@ describe("Test Login", () => {
             "We have accepted your password reset request. If you have a Telnyx account and are unable to reset your password successfully, please contact support for assistance."
         );
     });
+
+	it.only("cannot send 'Password Reset' form with empty field", async () => {
+		await loginPage.submitEmptyPasswordResetForm();
+		await expect(loginPage.resetSubmitButton).toBeDisabled();
+		await loginPage.resetEmailInput.click();
+		await browser.keys('Tab');
+		await loginPage.resetSubmitButton.click();
+		await expect(loginPage.resetSubmitButton).toBeDisabled();
+		await expect(loginPage.getMessage("errorRequired")).toBeDisplayed();
+        await expect(loginPage.getMessage("errorRequired")).toHaveTextContaining("Required");
+	});
 });

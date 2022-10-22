@@ -36,6 +36,14 @@ class LoginPage extends BasePage {
 		return $(`${resendEmailForm} ${emailInput}`);
 	}
 
+	get resetSubmitButton() {
+		return $(`${passwordResetForm} ${submitButton}`);
+	}
+
+	get resetEmailInput() {
+		return $(`${passwordResetForm} ${emailInput}`);
+	}
+
     async getMessage(field) {
         return await $(messages[field]);
     }
@@ -74,6 +82,11 @@ class LoginPage extends BasePage {
         await $(`${passwordResetForm} ${emailInput}`).setValue(userCreds.email);
         await $(`${passwordResetForm} ${submitButton}`).click();
     }
+
+	async submitEmptyPasswordResetForm() {
+		await $(passwordResetLink).click();
+		await $(`${passwordResetForm} ${submitButton}`).click();
+	}
 }
 
 module.exports = new LoginPage();

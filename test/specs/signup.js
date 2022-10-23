@@ -18,7 +18,8 @@ describe("Test SignUp", () => {
         await signupPage.fillAndSubmitSignUpForm(user);
         await expect(signupPage.errorMessages).toBeDisplayed();
         await expect(signupPage.errorMessages).toHaveTextContaining(
-            "We were unable to create a new account with this email. Please email support@telnyx.com for help with creating an account."
+            "unable to create a new account with this email.",
+            "your browser could not be authenticated via recaptcha"
         );
     });
 });

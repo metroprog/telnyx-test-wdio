@@ -17,20 +17,20 @@ describe("Test SignUp", () => {
     it("cannot sign up with not business email", async () => {
         await signupPage.fillAndSubmitSignUpForm(user, "valid");
         await expect(signupPage.errorMessages).toBeDisplayed();
-        await expect(signupPage.errorMessages).toHaveTextContaining(
+        await expect(signupPage.errorMessages).toHaveTextContaining([
             "unable to create a new account with this email.",
             "your browser could not be authenticated via recaptcha",
             "reCAPTCHA validation required"
-        );
+        ]);
     });
 
     it.only("cannot sign up with already registered email", async () => {
         await signupPage.fillAndSubmitSignUpForm(user, "exist");
         await expect(signupPage.errorMessages).toBeDisplayed();
-        await expect(signupPage.errorMessages).toHaveTextContaining(
+        await expect(signupPage.errorMessages).toHaveTextContaining([
             "That email and password combination is not valid",
             "your browser could not be authenticated via recaptcha",
             "reCAPTCHA validation required"
-        );
+        ]);
     });
 });

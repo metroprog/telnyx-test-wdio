@@ -24,8 +24,8 @@ class SignupPage extends BasePage {
         await $(emailInput).setValue(email);
     }
 
-    async fillAndSubmitSignUpForm(userCreds) {
-        await this.fillEmailInput(userCreds.email);
+    async fillAndSubmitSignUpForm(userCreds, type) {
+        await this.fillEmailInput(type == "exist" ? userCreds.existingEmail : userCreds.email);
         await $(fullNameInput).setValue(`${userCreds.firstName} ${userCreds.lastName}`);
         await $(passwordInput).setValue(userCreds.password);
         await $(termsAndConditionsCheckbox).click();

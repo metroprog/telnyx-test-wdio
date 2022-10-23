@@ -5,6 +5,7 @@ class User {
         this.email = "testuser@example.com";
         this.password = "Password55!!";
         this.website = "https://example.com";
+        this.existingEmail = "example@google.com";
     }
 }
 

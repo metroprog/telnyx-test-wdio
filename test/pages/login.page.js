@@ -12,11 +12,11 @@ const messages = {
     error: '[data-testid="login.signin.message"]',
     successResend: '[data-testid="login.resend.message"]',
     successReset: '[data-testid="login.pwreset.message"]',
-	errorRequired: '[class*="TextField__ErrorMessage"]'
+    errorRequired: '[class*="TextField__ErrorMessage"]',
 };
 const resendEmailLink = '[href*="/resend-email"]';
 const passwordResetLink = '[href*="/password-reset"]';
-const requiredFields = '.ui-reactv2-input';
+const requiredFields = ".ui-reactv2-input";
 
 class LoginPage extends BasePage {
     async open() {
@@ -28,21 +28,21 @@ class LoginPage extends BasePage {
         return $$(`${loginForm} ${requiredFields}`);
     }
 
-	get resendSubmitButton() {
-		return $(`${resendEmailForm} ${submitButton}`);
-	}
+    get resendSubmitButton() {
+        return $(`${resendEmailForm} ${submitButton}`);
+    }
 
-	get resendEmailInput() {
-		return $(`${resendEmailForm} ${emailInput}`);
-	}
+    get resendEmailInput() {
+        return $(`${resendEmailForm} ${emailInput}`);
+    }
 
-	get resetSubmitButton() {
-		return $(`${passwordResetForm} ${submitButton}`);
-	}
+    get resetSubmitButton() {
+        return $(`${passwordResetForm} ${submitButton}`);
+    }
 
-	get resetEmailInput() {
-		return $(`${passwordResetForm} ${emailInput}`);
-	}
+    get resetEmailInput() {
+        return $(`${passwordResetForm} ${emailInput}`);
+    }
 
     async getMessage(field) {
         return await $(messages[field]);
@@ -55,10 +55,10 @@ class LoginPage extends BasePage {
         await $(`${loginForm} ${submitButton}`).click();
     }
 
-	async submitEmptyLoginForm() {
-		await $(loginTab).click();
-		await $(`${loginForm} ${submitButton}`).click();
-	}
+    async submitEmptyLoginForm() {
+        await $(loginTab).click();
+        await $(`${loginForm} ${submitButton}`).click();
+    }
 
     async fillAndSubmitSSOForm(userCreds) {
         await $(ssoTab).click();
@@ -72,10 +72,10 @@ class LoginPage extends BasePage {
         await $(`${resendEmailForm} ${submitButton}`).click();
     }
 
-	async submitEmptyVerificationEmailForm() {
-		await $(resendEmailLink).click();
-		await $(`${resendEmailForm} ${submitButton}`).click();
-	}
+    async submitEmptyVerificationEmailForm() {
+        await $(resendEmailLink).click();
+        await $(`${resendEmailForm} ${submitButton}`).click();
+    }
 
     async fillAndSubmitPasswordResetForm(userCreds) {
         await $(passwordResetLink).click();
@@ -83,10 +83,10 @@ class LoginPage extends BasePage {
         await $(`${passwordResetForm} ${submitButton}`).click();
     }
 
-	async submitEmptyPasswordResetForm() {
-		await $(passwordResetLink).click();
-		await $(`${passwordResetForm} ${submitButton}`).click();
-	}
+    async submitEmptyPasswordResetForm() {
+        await $(passwordResetLink).click();
+        await $(`${passwordResetForm} ${submitButton}`).click();
+    }
 }
 
 module.exports = new LoginPage();

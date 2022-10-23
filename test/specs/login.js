@@ -43,16 +43,16 @@ describe("Test Login", () => {
         );
     });
 
-	it("cannot send 'Resend Verification Email' form with empty field", async () => {
-		await loginPage.submitEmptyVerificationEmailForm();
-		await expect(loginPage.resendSubmitButton).toBeDisabled();
-		await loginPage.resendEmailInput.click();
-		await browser.keys('Tab');
-		await loginPage.resendSubmitButton.click();
-		await expect(loginPage.resendSubmitButton).toBeDisabled();
-		await expect(loginPage.getMessage("errorRequired")).toBeDisplayed();
+    it("cannot send 'Resend Verification Email' form with empty field", async () => {
+        await loginPage.submitEmptyVerificationEmailForm();
+        await expect(loginPage.resendSubmitButton).toBeDisabled();
+        await loginPage.resendEmailInput.click();
+        await browser.keys("Tab");
+        await loginPage.resendSubmitButton.click();
+        await expect(loginPage.resendSubmitButton).toBeDisabled();
+        await expect(loginPage.getMessage("errorRequired")).toBeDisplayed();
         await expect(loginPage.getMessage("errorRequired")).toHaveTextContaining("Required");
-	});
+    });
 
     it("successfully send 'Password Reset' form", async () => {
         await loginPage.fillAndSubmitPasswordResetForm(user);
@@ -62,14 +62,14 @@ describe("Test Login", () => {
         );
     });
 
-	it.only("cannot send 'Password Reset' form with empty field", async () => {
-		await loginPage.submitEmptyPasswordResetForm();
-		await expect(loginPage.resetSubmitButton).toBeDisabled();
-		await loginPage.resetEmailInput.click();
-		await browser.keys('Tab');
-		await loginPage.resetSubmitButton.click();
-		await expect(loginPage.resetSubmitButton).toBeDisabled();
-		await expect(loginPage.getMessage("errorRequired")).toBeDisplayed();
+    it.only("cannot send 'Password Reset' form with empty field", async () => {
+        await loginPage.submitEmptyPasswordResetForm();
+        await expect(loginPage.resetSubmitButton).toBeDisabled();
+        await loginPage.resetEmailInput.click();
+        await browser.keys("Tab");
+        await loginPage.resetSubmitButton.click();
+        await expect(loginPage.resetSubmitButton).toBeDisabled();
+        await expect(loginPage.getMessage("errorRequired")).toBeDisplayed();
         await expect(loginPage.getMessage("errorRequired")).toHaveTextContaining("Required");
-	});
+    });
 });
